@@ -45,7 +45,7 @@ askButton.addEventListener("click", async () => {
   loadingIndicator.style.display = "block";
   askButton.disabled = true;
 
-  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${"AQ.Ab8RN6LkZTUk8iRg8vflXnZIHMW9E_Xf7QRYyOzwkP6L4GnWFQ"}`;
+  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${"hidden_key"}`;
 
   const requestBody = {
     contents: [{ role: "user", parts: [{ text: question }] }],
